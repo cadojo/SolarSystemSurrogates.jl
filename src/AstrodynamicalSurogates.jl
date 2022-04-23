@@ -40,6 +40,11 @@ $(IMPORTS)
 """
 module AstrodynamicalSurogates
 
+export NAIF
+
 using DocStringExtensions
+
+include(joinpath("NAIF", "NAIF.jl"))
+import .NAIF
 
 end # module
