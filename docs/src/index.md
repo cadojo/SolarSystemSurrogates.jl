@@ -1,3 +1,3 @@
-# AstrodynamicalSurogates.jl
+# SolarSystemSurrogates.jl
 
-Documentation for AstrodynamicalSurogates.jl
+Documentation for SolarSystemSurrogates.jl. More to come!

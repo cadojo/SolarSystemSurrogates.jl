@@ -15,17 +15,19 @@ $(EXPORTS)
 """
 module NAIF
 
+using Memoize 
+
 export barycenters, planets, spacecraft, comets, asteroids, groundstations
 
 using DocStringExtensions, CSV, DataFrames
 
 makeframe(x) = DataFrame(CSV.File(joinpath(@__DIR__, "..", "..", "build", "NAIF", x)))
 
-const barycenters    = makeframe("Barycenters.csv")
-const planets        = makeframe("Planets.csv")
-const spacecraft     = makeframe("Spacecraft.csv")
-const comets         = makeframe("Comets.csv")
-const asteroids      = makeframe("Asteroids.csv")
-const groundstations = makeframe("GroundStations.csv")
+barycenter()     = makeframe("Barycenters.csv")
+planets()        = makeframe("Planets.csv")
+spacecraft()     = makeframe("Spacecraft.csv")
+comets()         = makeframe("Comets.csv")
+asteroids()      = makeframe("Asteroids.csv")
+groundstations() = makeframe("GroundStations.csv")
 
 end # module
