@@ -1,0 +1,4 @@
+name = "SolarSystemSurrogates"
+uuid = "95219276-6331-4dd2-8642-f710378f6aca"
+authors = ["Joe Carpinelli <joseph.d.carpinelli@loopy.software>"]
+version = "0.1.0"
